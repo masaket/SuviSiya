@@ -11,10 +11,11 @@ namespace SuviSiya.Controllers
     {
 
         // GET: Games/Random
-        public ActionResult Random()
+        public ViewResult Random()
         {
             var games = new Games() { Name = "Snake!" };
             return View(games);
+           
         }
     }
 }
